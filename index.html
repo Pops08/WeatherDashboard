@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-light bg-dark justify-content-center">
+            <h1>
+                Weather Dashboard
+            </h1>          
+        </nav>
+        
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col w-100 p-3">
+                <div id="searchBox">
+
+                    <h2>Search For A City:</h2> <br />
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="" aria-label=""
+                            aria-describedby="basic-addon1" id="userCity" spellcheck="true">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" type="button" id="userSbmt">Search</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="cities">
+                    <ul id="citiesList" class="list-group">
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="col w-50 p-3" hidden="true" id="currentWeather">
+                <h2 id="CityInput"></h2>
+                <div id="icon"> </div> <br>
+                Temperature: <span id="currentTemp"> </span> <br>
+                Humidity: <span id="currentHumidity"> </span> <br>
+                Wind Speed: <span id="currentWind"> </span> <br>
+                UV Index: <span id="currentUV"> </span> <br>
+
+            </div>
+        </div>
+
+        <div class="row" hidden="true" id="FiveDaysHeader">
+            <h2>5 Day Forecast:</h2>
+        </div>
+
+        <div class="row mt-5 justify-content-center" id="FiveDays" hidden="true">
+            <div class="col-2 fiveDay ml-3 fiveDayTxt">
+                <span id="fiveDayDate" class="fiveDayTxt"></span> <br>
+                <span id="fiveDayIcon"></span> <br>
+                Temp: <span id="fiveDayTemp"></span> <br>
+                Humidity: <span id="fiveDayHum" class="fiveDayTxt"></span>
+            </div>
+            <div class="col-2 fiveDay ml-3 fiveDayTxt">
+                <span id="fiveDayDate" class="fiveDayTxt"></span> <br>
+                <span id="fiveDayIcon"></span> <br>
+                Temp: <span id="fiveDayTemp"></span> <br>
+                Humidity: <span id="fiveDayHum" class="fiveDayTxt"></span>
+            </div>
+            <div class="col-2 fiveDay ml-3 fiveDayTxt">
+                <span id="fiveDayDate" class="fiveDayTxt"></span> <br>
+                <span id="fiveDayIcon"></span> <br>
+                Temp: <span id="fiveDayTemp"></span> <br>
+                Humidity: <span id="fiveDayHum" class="fiveDayTxt"></span>
+            </div>
+            <div class="col-2 fiveDay ml-3 fiveDayTxt">
+                <span id="fiveDayDate" class="fiveDayTxt"></span> <br>
+                <span id="fiveDayIcon"></span> <br>
+                Temp: <span id="fiveDayTemp"></span> <br>
+                Humidity: <span id="fiveDayHum" class="fiveDayTxt"></span>
+            </div>
+            <div class="col-2 fiveDay ml-3 fiveDayTxt">
+                <span id="fiveDayDate" class="fiveDayTxt"></span> <br>
+                <span id="fiveDayIcon"></span> <br>
+                Temp: <span id="fiveDayTemp" class="fiveDayTxt"></span> <br>
+                Humidity: <span id="fiveDayHum"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

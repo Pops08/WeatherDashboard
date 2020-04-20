@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.highUV {
+    background-color: crimson;
+}
+
+.midUV {
+    background-color: yellow;
+}
+
+.lowUV {
+    background-color: green;
+}
+
+.card {
+    display:inline-block;
+}
+
+.fiveDay {
+    background-color: blue;
+}
+
+.fiveDayTxt {
+    color:white;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+li:hover {
+    background-color: blue;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
